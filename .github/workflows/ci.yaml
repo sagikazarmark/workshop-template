@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  code:
+    name: Code
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Test your example code here
+
+  slides:
+    name: Slides
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Install reveal-md
+        run: npm install -g reveal-md
+
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build
+        run: reveal-md --static public/ --static-dirs slides/assets slides/index.md
