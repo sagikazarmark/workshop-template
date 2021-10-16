@@ -26,6 +26,6 @@
         };
       in {
         devShell =
-          pkgs.mkShell { buildInputs = with pkgs; [ gnumake reveal-md ]; };
+          pkgs.mkShell { buildInputs = with pkgs; [ git gnumake reveal-md ]; };
       });
 }
