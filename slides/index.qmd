@@ -1,0 +1,32 @@
+---
+title: "My workshop template"
+subtitle: Subtitle
+# format:
+#   revealjs:
+#     theme: sky
+# highlight-style: monokai
+---
+
+# Agenda
+
+- Item 1
+- Item 2
+- Item 3
+
+# Documentation
+
+See the [Quarto documentation](https://quarto.org/docs/presentations/revealjs/).
+
+# PDF
+
+Want to grab a PDF version?
+
+Try the [PDF Export mode](https://quarto.org/docs/presentations/revealjs/presenting.html#print-to-pdf) from Chrome/Chromium.
+
+Alternatively (and sometimes for better result), use [decktape](https://github.com/astefanutti/decktape):
+
+```shell
+decktape --size='2048x1536' 'http://localhost:7996' slides.pdf
+```
+
+# The End

@@ -1,0 +1,13 @@
+project:
+  type: website
+
+date-format: iso
+
+format:
+  revealjs:
+    # mermaid-format: svg
+    transition: slide
+    controls: true
+    controls-layout: bottom-right
+    center: true
+    navigation-mode: vertical
