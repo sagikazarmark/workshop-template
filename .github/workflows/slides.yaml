@@ -27,7 +27,7 @@ jobs:
 
       - name: Render
         shell: nix develop -c bash {0}
-        run: quarto render --site-url ${{ steps.pages.outputs.base_url }} slides/
+        run: quarto render slides/ --site-url ${{ steps.pages.outputs.base_url }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
