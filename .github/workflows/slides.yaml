@@ -35,6 +35,7 @@ jobs:
           path: ./slides/_site
 
   deploy:
+    name: Deploy
     runs-on: ubuntu-latest
     permissions:
       contents: read
